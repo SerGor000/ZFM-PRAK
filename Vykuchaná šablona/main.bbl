@@ -1,0 +1,144 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyvt/global//global/global}
+    \entry{ZFM}{online}{}
+      \name{author}{1}{}{%
+        {{hash=243f601dac3485dcd4e768c7995bfbdb}{%
+           family={Chaloupka},
+           familyi={C\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{243f601dac3485dcd4e768c7995bfbdb}
+      \strng{fullhash}{243f601dac3485dcd4e768c7995bfbdb}
+      \strng{bibnamehash}{243f601dac3485dcd4e768c7995bfbdb}
+      \strng{authorbibnamehash}{243f601dac3485dcd4e768c7995bfbdb}
+      \strng{authornamehash}{243f601dac3485dcd4e768c7995bfbdb}
+      \strng{authorfullhash}{243f601dac3485dcd4e768c7995bfbdb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Základy fyzikálních měření}
+      \field{urlday}{14}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://people.fjfi.cvut.cz/chalopet/ZFM/ZFM.pdf
+      \endverb
+      \verb{url}
+      \verb https://people.fjfi.cvut.cz/chalopet/ZFM/ZFM.pdf
+      \endverb
+    \endentry
+    \entry{Navod}{online}{}
+      \name{author}{1}{}{%
+        {{hash=97b70e3f3697533578a3c7a6455a8a8a}{%
+           family={{Kolektiv KF}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \strng{fullhash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \strng{bibnamehash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \strng{authorbibnamehash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \strng{authornamehash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \strng{authorfullhash}{97b70e3f3697533578a3c7a6455a8a8a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Měření teploty wolframového vlákna}
+      \field{urlday}{14}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://moodle-vyuka.cvut.cz/mod/resource/view.php?id=156597
+      \endverb
+      \verb{url}
+      \verb https://moodle-vyuka.cvut.cz/mod/resource/view.php?id=156597
+      \endverb
+    \endentry
+    \entry{Optika}{book}{}
+      \name{author}{1}{}{%
+        {{hash=89afba937e2a2c316bed2b4445ceaed4}{%
+           family={Lepil},
+           familyi={L\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prometheus, Praha}%
+      }
+      \strng{namehash}{89afba937e2a2c316bed2b4445ceaed4}
+      \strng{fullhash}{89afba937e2a2c316bed2b4445ceaed4}
+      \strng{bibnamehash}{89afba937e2a2c316bed2b4445ceaed4}
+      \strng{authorbibnamehash}{89afba937e2a2c316bed2b4445ceaed4}
+      \strng{authornamehash}{89afba937e2a2c316bed2b4445ceaed4}
+      \strng{authorfullhash}{89afba937e2a2c316bed2b4445ceaed4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optika pro gymnázia}
+      \true{nocite}
+    \endentry
+    \entry{Tabulky}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87b6aa82bf27268f26ea7d83729fb2ed}{%
+           family={Mikulčák},
+           familyi={M\bibinitperiod},
+           given={Jiří},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d211bae6c9c444702818015b6d7ad982}{%
+           family={Fořtová},
+           familyi={F\bibinitperiod},
+           given={Ilona},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {nakladatelství Prometheus, spol. s. r. o.}%
+      }
+      \strng{namehash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{fullhash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{bibnamehash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{authorbibnamehash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{authornamehash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{authorfullhash}{87b6aa82bf27268f26ea7d83729fb2ed}
+      \strng{editorbibnamehash}{d211bae6c9c444702818015b6d7ad982}
+      \strng{editornamehash}{d211bae6c9c444702818015b6d7ad982}
+      \strng{editorfullhash}{d211bae6c9c444702818015b6d7ad982}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-80-7196-264-9}
+      \field{title}{Matematické, fyzikální a chemické TABULKY a VZORCE pro střední školy}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

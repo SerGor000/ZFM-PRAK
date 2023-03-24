@@ -1,0 +1,14 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'main.blg'
+[144] biber-MSWIN64:340> INFO - === 
+[189] Biber.pm:418> INFO - Reading 'main.bcf'
+[304] Biber.pm:975> INFO - Using all citekeys in bib section 0
+[319] Biber.pm:4401> INFO - Processing section 0
+[332] Biber.pm:4592> INFO - Looking for bibtex file './tex/bibliografie.bib' for section 0
+[383] bibtex.pm:1713> INFO - LaTeX decoding ...
+[395] bibtex.pm:1518> INFO - Found BibTeX data source './tex/bibliografie.bib'
+[468] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[468] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[469] Biber.pm:4221> INFO - Sorting list 'nyvt/global//global/global' of type 'entry' with template 'nyvt' and locale 'cs-CZ'
+[479] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[482] bbl.pm:757> INFO - Output to main.bbl

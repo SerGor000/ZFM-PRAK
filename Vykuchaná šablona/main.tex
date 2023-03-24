@@ -1,0 +1,250 @@
+% ----------------------------------------------------------------------
+%  Základní nastavení dokumentu - musí být na začátku každého tex
+%  (pořadí příkazů v této části je důležité!)
+% ----------------------------------------------------------------------
+
+%  Typ dokumentu - článek, prezentace aj.
+% Standardní základ
+%\documentclass[a4paper,10pt]{article} 
+%\usepackage[letterpaper]{geometry}
+%\geometry{verbose,tmargin=1.5cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+
+% Alternativní verze - vhodnější formát papíru (větší hustota textu)
+\documentclass[10pt]{scrartcl}
+\KOMAoptions{DIV=20} % formát papíru a odsazení od jeho okrajů
+
+%  Kódování výstupu - aby šlo z pdf kopírovat včetně háčků a čárek
+\usepackage[T1]{fontenc} 
+
+%  Kódování vstupu - v kódu lze použít háčky a čárky
+\usepackage[utf8]{inputenc} 
+
+%  Základní typografická pravidla češtiny/slovenštiny
+\usepackage[czech]{babel} 
+%\usepackage[slovak]{babel}
+% použijte jen jeden z příkazů
+
+
+%  Lépe vypadající písmo pro T1 kódování
+\usepackage{lmodern} 
+% je možno zakomentovat, nepoužívá-li se T1 kódování
+
+
+
+
+%  Formátování stránek, empty = odstraní číslování
+% \pagestyle{empty}
+
+%  Řádkování
+\linespread{1.1}
+
+
+% ----------------------------------------------------------------------
+%  Doplňující balíčky
+% ----------------------------------------------------------------------
+
+%  Po desetinné čárce v matematickém módu se nevytvoří mezera
+\usepackage{icomma} 
+
+%  Umožňuje pracovat s grafikou
+\usepackage{graphicx}
+
+%  Umožňuje použít dva obrázky vedle sebe
+\usepackage{subcaption}
+
+%  Pro vkládání obrázků ve formátu eps (např. z gnuplot)
+\usepackage{epstopdf} 
+
+%  Automaticky odsadí i první paragraf v každé sekci
+\usepackage{indentfirst}
+
+%  Umožňuje rozdělovat obsah na více sloupců
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{pgffor}
+
+%  Umožňuje používat hypertextové odkazy, nastavuje jejich vlastnosti
+\usepackage[unicode]{hyperref}
+
+
+% ----------------------------------------------------------------------
+%  Matematika
+% ----------------------------------------------------------------------
+
+%  Lepší zobrazování matematiky (rozšíření sum o \limits atd.)
+\everymath{\displaystyle}
+
+%  Široké spektrum příkazů pro matematiku
+% (Umožní např. psát přes \mathbb{N/R/Q/..} množiny čísel)
+\usepackage{amsmath,amssymb}
+
+%  Velikost fontu matematických výrazů v dokumentu lze pro danou
+% základního fontu dokumentu upravit pomocí:
+% \DeclareMathSizes{X}{Y}{Z}{U} kde:
+% X je velikost fontu v dokumentu, pro kterou se matematika upraví
+% Y je standartní velikost fontu matematiky
+% Z je velikost fontu zmenšených (vnořených výrazů)
+% U je velikost fontu ještě více zmenšených (vnořených výrazů).
+\DeclareMathSizes{10}{10}{8}{7}
+
+%  Široké spektrum příkazů pro fyziku
+\usepackage{physics}
+
+%  Psaní SI jednotek
+\usepackage{siunitx}
+
+%  Nám bližší zápis písmene epsilon
+\AtBeginDocument{%
+%\let\phi\varphi
+\let\epsilon\varepsilon
+}
+
+
+% ----------------------------------------------------------------------
+%  Pro češtinu/slovenštinu
+% ----------------------------------------------------------------------
+
+%  Lokalizace některých názvů do češtiny/slovenštiny
+\addto\captionsczech{\renewcommand{\figurename}{Obr.}}
+\addto\captionsczech{\renewcommand{\tablename}{Tab.}}
+%\addto\captionsczech{\renewcommand{\refname}{Reference}}
+
+\addto\captionsslovak{\renewcommand{\figurename}{Obr.}}
+\addto\captionsslovak{\renewcommand{\tablename}{Tab.}}
+%\addto\captionsslovak{\renewcommand{\refname}{Reference}}
+\renewcommand{\tableautorefname}{Tab.}
+\renewcommand{\figureautorefname}{Obr.}
+% Odkomentujte následující příkaz, máte-li stažený balíček encxvlna 
+% (nutno stáhnout manuálně)
+%\usepackage{encxvlna} %vloží nezlomitelné mezery k jednopísmenným
+
+% Nastaví psaní jednotek
+
+\sisetup{inter-unit-product=\ensuremath{{}\cdot{}}}
+
+% Pro úžasně jednoduché citace
+
+\usepackage[
+backend=biber,        % if we want unicode and many other features (biber is already by default)
+style=iso-numeric, % or iso-numeric for numeric citation method
+citestyle=iso-numeric,
+sorting=nyvt
+]{biblatex}
+
+\addbibresource{./tex/bibliografie.bib}
+\DeclareFieldFormat{labelnumberwidth}{[#1]}
+
+
+% ----------------------------------------------------------------------
+%  Soubor s makry
+% ----------------------------------------------------------------------
+\input{tex/makra}
+%  nachází se ve složce /tex/
+
+
+
+% ----------------------------------------------------------------------
+%  Nastavení odkazů a výsledného pdf
+% ----------------------------------------------------------------------
+\hypersetup{
+colorlinks=true, 
+citecolor=blue, 
+filecolor=blue, 
+linkcolor=blue,
+urlcolor=blue, 
+pdftitle={\Title},    % title
+pdfauthor={\Author},     % author
+pdfsubject={Protokol},   % subject of the document
+pdfcreator={\Author},   % creator of the document
+%     pdfproducer={Producer}, % producer of the document
+%     pdfkeywords={keywords}, % list of keywords
+pdfnewwindow=true,      % links in new window
+}
+
+% ----------------------------------------------------------------------
+%  Začátek dokumentu - formátování na výstup
+% ----------------------------------------------------------------------
+\begin{document}
+
+% Interní proměnné, možno zobrazovat u prezentací, používají se při
+% generování pomocí \titlepage apod.
+\author{\Author}
+\title{\Title}
+\date{\Labdate}
+
+
+% ----------------------------------------------------------------------
+%  Hlavička dokumentu
+% ----------------------------------------------------------------------
+
+\setlength{\parindent}{0cm}
+\begin{multicols}{2}
+\textsf{\textbf{\Subject \hspace{10cm} \Institute}\\
+%\large  \Title \\[0.5cm]
+\textbf{\large{\Title}}}
+
+\begin{tabular}{rlrl}
+	 \textsf{Jméno:} & \textbf{\textsf\Author}    &      \textsf{Kolega:} & \textsf{\Coauthor} \\[1.5pt]
+	  \textsf{Kruh:} & \textbf{\textsf\Group}     & \textsf{Číslo skup.:} & \textsf{\Circle}   \\[1.5pt]
+	\textsf{Měřeno:} & \textbf{\textsf{\Labdate}} &  \textsf{Klasifikace}: & 
+\end{tabular}
+
+\begin{flushright}
+\vspace*{-0.3cm}
+\includegraphics[scale=0.2]{img/fjfi.pdf}
+\hspace{0.4cm}
+\includegraphics[scale=0.2]{img/cvut.pdf}
+\hspace*{1cm}
+\end{flushright}
+\end{multicols}
+
+\hrule
+
+% ----------------------------------------------------------------------
+%  Tělo dokumentu
+% ----------------------------------------------------------------------
+
+\setlength{\parindent}{0.5cm}
+
+% ----------------------------------------------------------------------
+%  Protokol
+
+\pagenumbering{arabic}  % číslování stránek čísly
+\input{tex/protokol}
+% ----------------------------------------------------------------------
+
+% ----------------------------------------------------------------------
+%  Literatura
+
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+\nocite{*} 
+\printbibliography[title={Použitá literatura},heading=bibnumbered]
+
+
+
+% ----------------------------------------------------------------------
+%  Příloha
+
+\clearpage 
+\pagenumbering{roman}  % číslování stránek písmeny
+
+\setcounter{equation}{0}
+%\setcounter{section}{0}
+\numberwithin{equation}{section} % případné rovnice budou číslované pod číslem kapitoly
+
+\part*{\LARGE{Příloha}}
+
+\input{tex/apendix}
+% ----------------------------------------------------------------------
+
+%\clearpage
+				
+%\clearpage
+
+
+\end{document}
+
+% ----------------------------------------------------------------------
+%  Konec dokumentu
+% ----------------------------------------------------------------------

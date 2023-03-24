@@ -1,0 +1,95 @@
+% Výcuc ode mě:
+\section*{Výcuc o zpracování}
+Rovnice se zadává takto
+
+\begin{equation}
+	F(x) = \int_{0}^{x} f(t) \diff t
+	\label{eq:rovnice}
+\end{equation}
+
+Každý vzorec, obrázek nebo tabulku si pojmenujte pomocí \verb|\label{odkaz}|. Všechny odkazy se v .pdf zobrazí modře a jsou klikatelné.  Jak řešit odkazy v textu:
+\begin{itemize}
+	\item Na obrázky a tabulky se v textu odkazujte pomocí \verb|\autoref{...}| \autoref{fig:obrazek}.
+	
+	\item Na literaturu se odkazujte pomocí \verb|\cite{...}|: \cite{Tabulky}.
+	
+	\item Na rovnice se v textu odkazujte pomocí \verb|\eqref{...}|: \eqref{eq:rovnice}.
+	
+\end{itemize}			
+
+
+\begin{figure}[!hbt] %bez této hranaté závorky se obrázek umístí na vrchol stránky
+	\centering
+	\includegraphics[width=0.3\textwidth]{img/fjfi} %nejdůležitější řádek - obsahuje cestu k obrázku a také jeho relativní šířku k šířce textu
+	%všiměte si, že je možné vložit obrázek vnořený ve složce img - tam poté můžete ukládat další obrázky 
+	\caption{Popisek obrázku. Převzato z \cite{bib:zadani}} %popisek obrázku, který se zobrazí pod obrázkem
+	\label{fig:obrazek} %interní popis obrázku, který použijete k odkazování se
+\end{figure}			
+
+\begin{itemize}
+	\item Psaní jednotek $\unit{\metre \per \second\squared}$
+	\item Projděte si pravidla pro psaní matematických a fyzikálních výrazů: 	\url{http://www.aldebaran.cz/studium/vyrazy.pdf}
+	\item Používejte pevnou mezeru \verb|~| tam, kde se nemá zlomit řádek (aby nevznikaly na konci řádku osamocené jednopísmenné předložky): \verb|s~mezerou|. 
+	Toto dělá automaticky balíček \verb|encxvlna|, ten je však třeba doinstalovat: \url{https://merlin.fit.vutbr.cz/wiki/index.php/%C4%8Cesk%C3%A1_sazba_v_LaTeXu#Vlnky}
+	\hyperref{seznam.cz}{}{}{Seznam}
+	
+	\item Uměle zalamujte řádky, které přesahují šířku textu a nezalomily se samy: \verb|diagona\-lizovatelnost| = diagona\-lizovatelnost.
+	
+	\item Používejte desetinnou čárku (český standard), nikoli tečku (anglický standard).
+	
+	\item Pomlčka jakožto interpunkční znaménko se píše pomocí \verb|--| a mínus je třeba vysázet v matematickém módu (tj. ne \verb|-3 V|, ale \verb|$-3\unit{V}$|): $-3\unit{V}$ 
+	
+	\item České uvozovky nepište pomocí \verb|,, ... "|, ale příkazem \verb|\uv{...}|, který je součástí zavedeného balíčku \\ \verb|\usepackage[czech]{babel}|: \uv{takto}.
+\end{itemize}	
+
+
+% ----------------------------------------------------------------------
+%  Před psaním se důkladně seznamte s Pravidly pro vypracování protokolu!
+% ----------------------------------------------------------------------
+
+% ----------------------------------------------------------------------
+%  Pracovní úkoly - opište přímo ze zadání
+% ----------------------------------------------------------------------
+\section{Pracovní úkoly}
+\begin{outline}[enumerate]
+\1 Úkol jedna byl napsat úkol jedna
+\end{outline}
+% ----------------------------------------------------------------------
+%  Použité pomůcky
+% ----------------------------------------------------------------------
+
+
+\section{Použité přístroje a pomůcky}
+\textbf{Pomůcky:} \par 
+\textbf{Přístroje:} \par 
+\textbf{Programy:} \par
+
+% ----------------------------------------------------------------------
+%  Teoretický úvod - vlastními slovy stručne popište fyzikální podstatu měření a uveďte základní vztahy použité ve vypracování
+% ----------------------------------------------------------------------
+\section{Teoretický úvod}
+% ----------------------------------------------------------------------
+%  Postup měření - vlastními slovy popište postup měření tak, aby bylo vaše měření reprodukovatelné 
+% ----------------------------------------------------------------------
+	\section{Postup měření}
+			
+			
+
+					
+			
+% ----------------------------------------------------------------------
+%  Naměřené hodnoty a samotné vypracování úkolu
+% ----------------------------------------------------------------------				
+		\section{Vypracování}
+					
+			
+% ----------------------------------------------------------------------
+%  Diskuse - obsahuje komentář k jednotlivým výsledkům, porovnání s očekáváním/tabulkovými hodnotami, zdroje především systematických chyb měření, návrh na zlepšení výsledků,...
+% ----------------------------------------------------------------------			
+\section{Diskuse}
+% ----------------------------------------------------------------------
+%  Závěr - stručně a jasně shrnout splněné cíle měření, úkoly a výsledky měření
+% ----------------------------------------------------------------------
+\section{Závěr}
+
+
